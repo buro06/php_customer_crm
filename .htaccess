@@ -1,3 +1,11 @@
 <IfModule mod_autoindex.c>
 	Options -Indexes
 </IfModule>
+
+RewriteEngine On
+
+# Redirect root to public/index.php
+RewriteRule ^$ public/index.php [L]
+
+# Block access to sensitive directories
+RewriteRule ^(config|includes|db)/ - [F,L]

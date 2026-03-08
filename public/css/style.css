@@ -1,0 +1,143 @@
+/* Blue Theme */
+:root {
+    --bs-primary: #1a73e8;
+    --bs-primary-rgb: 26, 115, 232;
+}
+
+[data-bs-theme="light"] {
+    --bg-body: #f0f4f8;
+    --card-bg: #ffffff;
+    --text-muted-custom: #6c757d;
+}
+
+[data-bs-theme="dark"] {
+    --bg-body: #1a1d23;
+    --card-bg: #2b2f38;
+    --text-muted-custom: #9ca3af;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.bg-primary, .btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0 !important;
+    border-color: #1557b0 !important;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%) !important;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.stat-card {
+    border-left: 4px solid var(--bs-primary);
+}
+
+.stat-card .stat-icon {
+    font-size: 2rem;
+    color: var(--bs-primary);
+    opacity: 0.7;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--bs-primary);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 12px 16px;
+}
+
+.table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 50%, #1a237e 100%);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.login-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.login-card .card-body {
+    padding: 2rem;
+}
+
+#themeToggle {
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+}
+
+.badge-role {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.action-btns .btn {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+.search-box {
+    max-width: 300px;
+}

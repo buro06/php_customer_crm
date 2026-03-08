@@ -1,6 +1,4 @@
 <?php
-
-$date = date("Y-m-d H:i:s");
-
-?>
-Hello World <?php echo $date; ?>
+require_once __DIR__ . '/config/app.php';
+header('Location: ' . url('/public/index.php'));
+exit;
